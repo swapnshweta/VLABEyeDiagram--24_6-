@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pre-Test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../maincss.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body bgcolor="#000066">
+	<div id="nav-placeholder" style="background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px">
+  	<ul>
+   	  <li ><a  href="../index.html"><img src="../images/aim.png" alt="Theory" height="90px" class="active" width="100px"></a><a  href="../index.html">Aim</a></li>
+	  <li ><a  href="../theory_page/theory.html"><img src="../images/theory.png" alt="Theory" height="90px"  width="100px"></a><a  href="../theory_page/theory.html">Theory</a></li>
+	  <li><a href="../procedure/procedure.html"><img src="../images/Procedure.png" alt="Theory" height="90px" width="100px"></a><a href="../procedure/procedure.html">Procedure</a></li>
+	  <li><a href="#"><img src="../images/pre-test.png" alt="Theory" height="90px" width="100px"></a><a href="#">Pre-Test</a></li>
+	  <li><a href="#" onclick="alert('Complete Pre Test to perform Simulation')"><img src="../images/simulation.png" alt="Theory" height="90px" width="100px"></a><a href="#" onclick="alert('Complete Pre Test to perform Simulation')">Simulation</a></li>
+	  <li><a href="#" onclick="alert('Complete Simulation to access Post Test')"><img src="../images/post-test.png" alt="Theory" height="90px" width="100px"></a><a href="#" onclick="alert('Complete Simulation to access Post Test')">Post-Test</a></li>
+	  <li><a href="../references.html"><img src="../images/references.png" alt="Theory" height="90px" width="100px"></a><a href="../references.html">References</a></li>
+    <li><a href="../feedback.html"><img src="../images/feedback.png" alt="Theory" height="90px" width="100px"></a><a href="../feedback.html">Feedback</a></li>
+	</ul>
+  		
+  	</div>
+  		
+  </div>
+	<div id="whole_body" style=" background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 20px;padding-bottom:1.5rem;">
+		<div  style="font-size:30px; text-align:center;padding-top: 5px">
+    		<b> Understanding Eye diagram </b>
+    	</div>
+	    <h3 style="display: block; margin-left: 20px;"><b>Pre-Test:</b></h3>
+		    <div class="container" id="initial">
+            <div class="row">
+                <div class="col-12">
+                    <h3 style="display: block; margin-left: 20px; font-size:25px;">Choose the correct labelling from the options in
+                        the
+                        dropdown:</h3>
+                    <center><img src="images/pre_test_img.jpg" class="img
+                            img-responsive img-diagram" />
+                    </center>        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <h5>For A:</h5>
+                    <div class="dropdown">
+                        <select id="menu_A" class="form-control" style="width:14rem;"
+                            onchange="valueChangeA()">
+                            <option value="Noise Margin">Noise Margin</option>
+                            <option value="Eye Width">Eye Width</option>
+                            <option value="Jitter">Jitter</option>
+                            <option value="Distortion">Distortion</option>
+                        </select>
+                    </div>
+                    <div class="mt-2">
+                        <input type="text" placeholder="Option A" id="A" style="width:14rem;">
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5>For B:</h5>
+                    <div class="dropdown">
+                        <select id="menu_B" class="form-control" style="width:14rem;"
+                            onchange="valueChangeB()">
+                            <option value="Jitter">Jitter</option>
+                            <option value="Eye Width">Eye Width</option>
+                            <option value="Extension Beyond Tb">Extension Beyond
+                                Tb</option>
+                            <option value="Noise Margin">Noise Margin</option>
+                        </select>
+                    </div>
+                    <div class="mt-2">
+                        <input type="text" placeholder="Option B" id="B" style="width:14rem;">
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5>For C:</h5>
+                    <div class="dropdown">
+                        <select id="menu_C" class="form-control" style="width:14rem;"
+                            onchange="valueChangeC()">
+                            <option value="Impulse Response">Impulse Response</option>
+                            <option value="Eye Width">Eye Width</option>
+                            <option value="Jitter">Jitter</option>
+                            <option value="Extension Beyond Tb">Extension Beyond
+                                Tb</option>
+                        </select>
+                    </div>
+                    <div class="mt-2">
+                        <input type="text" placeholder="Option C" id="C" style="width:14rem;">
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5>For D:</h5>
+                    <div class="dropdown">
+                        <select id="menu_D" class="form-control" style="width:14rem;"
+                            onchange="valueChangeD()">
+                            <option value="Jitter">Jitter</option>
+                            <option value="Noise Margin">Noise Margin</option>
+                            <option value="Impulse Response">Impulse Response</option>
+                            <option value="Distortion">Distortion</option>
+                        </select>
+                    </div>
+                    <div class="mt-2">
+                        <input type="text" placeholder="Option D" id="D" style="width:14rem;">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row m-2">
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-primary" 
+                        onclick="checkAnswer()">Check
+                    </button>
+                    <button class="btn btn-primary" id="start-quiz" onclick="loadquiz()" >Next</button>
+                </div>
+
+            </div>
+        </div>
+		<div id="quiz body" style="position: relative;top: 20px;left: 20px;display: none; ">	
+            <h3>Solve these questions</h3>
+            <div id="quiz"></div>
+            <div id="results"></div>
+            <button id="submit" class="btn btn-primary">Check answers</button>
+            <button id="secondbutton" class="btn btn-danger" style="display: none;">View Answers</button>
+            <button type="submit" class="btn btn-warning mt-1" id="selectedAns" style="display: none; position: relative;">Download</button>
+            <a class="btn btn-success mt-1" id="simulateButton" href="../simulator/simulation.html" role="button" style="display: none; position: relative;">Perform Simulation</a>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</body>
+</html>

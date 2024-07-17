@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Simulation</title>
+	<meta charset="utf-8">
+	<meta charset="windows-1252">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../maincss.css">
+	<link rel="stylesheet" type="text/css" href="simulation.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  crossorigin="anonymous"></link>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+
+	</script>
+</head>
+
+<body bgcolor="#000066">
+
+	<div id="nav-placeholder" style="background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:100%; width:1160px;margin-bottom: 40px">
+		<ul>
+			<li><a href="../index.html"><img src="../../images/aim.png" alt="Theory" height="90px" class="active" width="100px"></a><a  href="../index.html">Aim</a></li>
+	  <li ><a  href="../theory_page/theory.html"><img src="../images/theory.png" alt="Theory" height="90px"  width="100px"></a><a  href="../theory_page/theory.html">Theory</a></li>
+	  <li><a href="../procedure/procedure.html"><img src="../images/Procedure.png" alt="Theory" height="90px" width="100px"></a><a href="../procedure/procedure.html">Procedure</a></li>
+	  <li><a href="../quiz/index.html"><img src="../images/pre-test.png" alt="Theory" height="90px" width="100px"></a><a href="../quiz/index.html">Pre-Test</a></li>
+	  <li><a href="#"><img src="../images/simulation.png" alt="Theory" height="90px" width="100px"></a><a href="#">Simulation</a></li>
+	  <li><a href="#" onclick="alert('Complete Simulation to access Post Test')"><img src="../images/post-test.png" alt="Theory" height="90px" width="100px"></a><a href="#" onclick="alert('Complete Simulation to access Post Test')">Post-Test</a></li>
+	  <li><a href="../references.html"><img src="../images/references.png" alt="Theory" height="90px" width="100px"></a><a href="../references.html">References</a></li>
+    <li><a href="../feedback.html"><img src="../images/feedback.png" alt="Theory" height="90px" width="100px"></a><a href="../feedback.html">Feedback</a></li>
+    </ul>
+        
+    </div>
+      
+    <div id="whole_body" style=" background-color:white;position:relative; margin-left:auto; margin-right:auto; margin-top:20px;height:1450px; width:1160px;font-size: 16px;margin-bottom: 20px">
+
+        <div style="font-size:30px; text-align:center; height:100px">
+         <b> Understanding Eye diagram </b>
+        </div>
+        
+      <div class="container">
+        <div class="row">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-info modal-button" data-toggle="modal" data-target="#exampleModalLong">View Procedure</button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Procedure</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ol>
+                    <li> The simulation page consists of 4 sections where you can vary different parameters such as Delay, Amplitude and Frequency. Navigate through the pages using carousel buttons. The steps of execution are the same for first three sections and different for the last section.</li>
+		                <li> For the first three sections, select the range of variation of the parameter using the given slider and click on <b>‘Add’</b> to observe the waveform formation on the screen. Wait for 5 seconds to observe the complete formation.</li><br>
+                    <img src="../procedure/p1.png" alt="simulator image" height="150px" width="400px"><br>
+		                <li>To change the value for the selected parameter, click on <b>‘Try Again’</b> and select the value on the slider again.</li>
+		                <li>Clicking on the screen will display the coordinates of the clicked point. To measure the parameters, enter the required coordinate of the two points whose distance is to be measured.</li><br>
+                    <img src="../procedure/p2.png" alt="simulator image" height="150px" width="400px"><br>
+		                <li>After entering the coordinates, click on <b>‘Calculate’</b> to get the result. If the result is shown incorrect, click on Try again and repeat steps 2 and 4 with your desired value of Delay/ Amplitude/ Frequency. If the result is correct, it is displayed on the screen.</li><br>
+                    <img src="../procedure/p3.png" alt="simulator image" height="150px" width="400px" style="border:1px solid #555;"><br>
+		                <li>Click on <b>'Next'</b> to move to the next section.</li>
+		                <li>For the last section, select the range of variation of Delay using the given slider and click on <b>‘Add Delay’</b>. The delay added waveform will be shown on the screen. Similarly select range of values for Amplitude and Frequency. Clicking on <b>‘Add Amplitude’</b> and <b>‘Add Frequency’</b>.</li><br>
+		                <img src="../procedure/p4.png" alt="simulator image" height="150px" width="400px" style="border:1px solid #555;"><br>
+                    <li>Repeat steps 4 and 5 to get the value of parameters.</li>
+                    <li>Click on <b>‘Attempt Post Test’</b> to proceed further.</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row1">
+            <div class="column col-xl-12 col-md-12 col-sm-12 column1 ">
+                <ol class="carousel-indicators">
+                    <button onclick="myFunction1()" id="btn1" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"
+                        >Delay addition<span></span></button>
+                    <button onclick="myFunction2();" id="btn2" data-target="#carouselExampleIndicators"
+                        data-slide-to="1">Amplitude range<span></span></button>
+                    <button onclick="myFunction3();" id="btn3" data-target="#carouselExampleIndicators"
+                        data-slide-to="2">Frequency range<span></span></button>
+                    <button onclick="myFunction4()" id="btn4" data-target="#carouselExampleIndicators"
+                        data-slide-to="3">All parameters<span></span></button>
+                </ol>
+            </div>
+        </div>
+
+        <!--SUBJECT-1 Slide Begin-->
+        <div class="row row2">
+            <div class="column col-xl-10 col-md-10 col-sm-12 offset-md-1 column2">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="div1 subject1padding" style='color: black;'>
+                                <div class="demoFont">Adding delay to signal</div>
+                            </div>
+                            <div class="row mb-3">
+            <div class="col-md-4 ml-3">
+                <canvas id="canvasD" width="390" style="border:1px solid #000000;background-color:#000000;padding-right:40px;" height="500" onclick="showCoords(event)" >
+            </canvas>
+            </div>
+            <div class="col-md-4 w-100" style="margin-left:13rem;margin-top:7rem;">
+                <div class="row">
+                    <input type="range" id="myRangeD" class="slider" value="20" min="20" max="80" onchange="sliderShowD()">
+                    <span class="mt-3" style="color:black">Selected Value: <label id="LabelD" style="right:0; "></label></span>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12">               
+                        <button type="button" class="btn btn-primary" id="buttonD" onclick="sliderValueD()" style="width:100%;margin-top:2rem;">Add Delay</button>
+                    </div>
+                    <br> <br>
+                    <div class="col-md-12">
+                        <button type="button" id="buttonTryD" class="btn btn-danger"  disabled onclick="tryagainD()" style="width:100%;margin-top:2rem;margin-bottom:1rem">Try Again</button>
+                    </div>
+                </div>
+                <h4 id="demoD" style="margin-top:1rem"></h4>
+            </div>  
+       <div class="row mt-3">
+        <div class="col-md-3">
+            <h5 style="margin-left:2rem;">Jitter</h5>
+            <form>
+                <label for="val1DJ" style="margin-left:2rem; color:black;">Coordinate 1</label>
+                <input type="number" id="val1DJ" placeholder="Enter coordinate 1" style="margin-right:2rem;margin-left:2rem;">
+                <label for="val2DJ" style="margin-left:2rem;margin-top:1rem; color:black">Coordinate 2</label>
+                <input type="number" id="val2DJ" placeholder="Enter coordinate 2" style="margin-right:2rem;margin-left:2rem;">
+                <br><br>
+                <button type="button" id="button2" class="btn btn-warning" onclick="showDJ()" 
+                style="width:90%;margin-left:2rem;">Calculate Jitter</button><br>
+                <h5 id="demoDJ" style="margin-left:3rem;margin-top:1rem;">Jitter: </h5>
+            </form> 
+            
+        </div>
+        <div class="col-md-3" style="margin-left:5rem;">
+            <h5 style="margin-left:2rem;">Eye Opening</h5>
+            <form>
+                <label for="val1DEO" style="margin-left:2rem; color:black;">Coordinate 1</label>
+                <input type="number" id="val1DEO" placeholder="Enter coordinate 1" style="margin-right:2rem;margin-left:2rem;">
+                <label for="val2DEO" style="margin-left:2rem;margin-top:1rem; color:black">Coordinate 2</label>
+                <input type="number" id="val2DEO" placeholder="Enter coordinate 2" style="margin-right:2rem;margin-left:2rem;">
+                <br><br>
+                <button type="button" id="button2" class="btn btn-danger"   onclick="showDEO()" 
+                style="width:90%;margin-left:2rem;">Calculate Eye Opening</button><br>
+                <h5 id="demoDEO" style="margin-left:1rem; margin-top:1rem;">Eye Opening:</h5>
+            </form> 
+            
+        </div>
+        <div class="col-md-3" style="margin-left:5rem">
+            <h5 style="margin-left:2rem;">Eye Width</h5>
+            <form>
+                <label for="val1DEW" style="margin-left:2rem; color:black;">Coordinate 1</label>
+                <input type="number" id="val1DEW" placeholder="Enter coordinate 1" style="margin-right:2rem;margin-left:2rem;">
+                <label for="val2DEW" style="margin-left:2rem;margin-top:1rem; color:black">Coordinate 2</label>
+                <input type="number" id="val2DEW" placeholder="Enter coordinate 2" style="margin-right:2rem;margin-left:2rem;">
+                <br><br>
+                <button type="button" id="button2" class="btn btn-primary"  onclick="showDEW()" 
+                style="width:90%;margin-left:2rem;">Calculate Eye Width</button><br>
+                <h5 id="demoDEW" style="margin-left:3rem;margin-top:1rem;">Eye width: </h5>
+                <br>
+                 <button onclick="myFunction2()" class="btn btn-success w-100 mt-2" data-slide-to="1"
+                 data-target="#carouselExampleIndicators" type="button" style="margin-left:2rem;margin-bottom:1rem;">Next</button>
+                </br>
+            </form> 
+            
+        </div>
+        
+    </div>     
+    
+
+                    
+    </div>                 
+    </div>
+                       
+                
+    <!--SUBJECT-1 Slide End-->
+    <!--SUBJECT-2 Slide Begin-->
+    <div id="amplitude" class="carousel-item ">
+
+        <div class="div1 subject2padding" style='color: black;'>
+            <div class="demoFont">Varying range of Amplitude</div>
+        </div>
+                       
+        <div class="row mb-3">
+            <div class="col-md-4 ml-3">
+                <canvas id="canvasA" width="390" style="border:1px solid #000000; background-color:#000000;margin-left:0;padding-right:40px;" height="500" onclick="showCoords(event)" >
+            </canvas>
+            </div>
+            <div class="col-md-4 w-100" style="margin-left:13rem;margin-top:7rem;">
+                <div class="row">
+                    <input type="range" id="myRangeA" class="slider"  min="-80" max="80" onchange="sliderShowA()">
+                    <span class="mt-2" style="color:black;">Selected Value: <label id="LabelA" style="right:0;"></label></span>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12">               
+                        <button type="button" class="btn btn-primary" id="buttonA" onclick="sliderValueA()" style="width:100%;margin-top:2rem;">Select Amplitude Range</button>
+                    </div>
+                    <br> <br>
+                    <div class="col-md-12">
+                        <button type="button" id="buttonTryA" class="btn btn-danger"  disabled onclick="tryagainA(myFunction2)" style="width:100%;margin-top:2rem;">Try Again</button>
+                    </div>
+                </div>
+                <h4 id="demoA" style="margin-top:1rem"></h4>
+            </div>
+        </div>          
+      <div class="row mt-3">
+        <div class="col-md-3">
+            <h5 style="margin-left:2rem;">Jitter</h5>
+            <form>
+                <label for="val1AJ" style="margin-left:2rem; color:black;">Coordinate 1</label>
+                <input type="number" id="val1AJ" placeholder="Enter coordinate 1" style="margin-right:2rem;margin-left:2rem;">
+                <label for="val2AJ" style="margin-left:2rem;margin-top:1rem; color:black">Coordinate 2</label>
+                <input type="number" id="val2AJ" placeholder="Enter coordinate 2" style="margin-right:2rem;margin-left:2rem;">
+                <br><br><br>
+                <button type="button" id="button2" class="btn btn-warning" onclick="showAJ()" 
+                style="width:90%;margin-left:2rem;">Calculate Jitter</button>
+                <h5 id="demoAJ" style="margin-left:3rem;margin-top:1rem;">Jitter: </h5>
+            </form>    
+        </div>
+        <div class="col-md-3" style="margin-left:1rem;">
+            <h5 style="margin-left:2rem;">Eye Opening</h5>
+            <form>
+                <label for="val1AEO" style="margin-left:2rem; color:black;">Coordinate 1</label>
+                <input type="number" id="val1AEO" placeholder="Enter coordinate 1" style="margin-right:2rem;margin-left:2rem;">
+                <label for="val2AEO" style="margin-left:2rem;margin-top:1rem; color:black">Coordinate 2</label>
+                <input type="number" id="val2AEO" placeholder="Enter coordinate 2" style="margin-right:2rem;margin-left:2rem;">
+                <br><br><br>
+                <button type="button" id="button2" class="btn btn-danger" onclick="showAEO()" 
+                style="width:90%;margin-left:2rem;">Calculate Eye Opening</button>
+                <h5 id="demoAEO" style="margin-left:1rem; margin-top:1rem;">Eye Opening:</h5>
+            </form>
+        </div>
+        <div class="col-md-3" style="margin-left:5rem">
+            <h5 style="margin-left:2rem;">Eye Width</h5>
+            <form>
+                <label for="val1AEW" style="margin-left:2rem; color:black;">Coordinate 1</label>
+                <input type="number" id="val1AEW" placeholder="Enter coordinate 1" style="margin-right:2rem;margin-left:2rem;">
+                <label for="val2AEW" style="margin-left:2rem;margin-top:1rem; color:black">Coordinate 2</label>
+                <input type="number" id="val2AEW" placeholder="Enter coordinate 2" style="margin-right:2rem;margin-left:2rem;">
+                <br><br><br>
+                <button type="button" id="button2" class="btn btn-primary"  onclick="showAEW()" 
+                style="width:90%;margin-left:2rem;">Calculate Eye Width</button>
+                <h5 id="demoAEW" style="margin-left:3rem;margin-top:1rem;">Eye width: </h5>
+                <br>
+                 <button onclick="myFunction3()" class="btn btn-success w-100 mt-2" type="button"
+                 data-slide-to="2" data-target="#carouselExampleIndicators" style="margin-left:2rem;margin-bottom:1rem;">Next</button>
+                </br>
+            </form>
+        </div>   
+      </div>                      
+    </div>
+    <!--SUBJECT-2 Slide Ends-->
+
+    <!--SUBJECT-3 Slide Begin-->
+  <div class="carousel-item">
+        <div class="div1 subject3padding">
+            <div class="demoFont">Varying range of Frequency</div>
+        </div>
+
+    <div class="row mb-3">
+            <div class="col-md-4 ml-3">
+                    <canvas id="canvasF" width="390" style="border:1px solid #000000;background-color:#000000;margin-left:0;padding-right:40px;" height="500" onclick="showCoords(event)" >
+                    </canvas>
+            </div>
+        
+       <div class="col-md-4 w-100" style="margin-left:13rem;margin-top:7rem;">
+                <div class="row">
+                  <input type="range" id="myRangeF" class="slider" value="20" min="20" max="40"  onchange="sliderShowF()"><span class="mt-2" style="color:black;">Selected value:
+                      <label id="LabelF" style="right:0;"></label>
+                      </span>
+                </div>
+
+            <div class="row mt-3">
+                <div class="col-md-12">               
+                    <button type="button" class="btn btn-primary" id="buttonF" onclick="sliderValueF()" style="width:100%;margin-top:2rem;">Select frequency range</button>
+                </div>
+                <br> <br>
+                <div class="col-md-12">
+                    <button type="button" id="buttonTryF" class="btn btn-danger"  disabled onclick="tryagainF()" style="width:100%;margin-top:2rem;">Try Again</button>
+                </div>
+            </div>
+            <h4 id="demoF" style="margin-top:1rem"></h4>
+        </div>    
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <h5 style="margin-left:2rem;">Jitter</h5>
+            <form>
+                <label for="val1FJ" style="margin-left:2rem; color:black;">Coordinate 1</label>
+                <input type="number" id="val1FJ" placeholder="Enter coordinate 1" style="margin-right:2rem;margin-left:2rem;">
+                <label for="val2FJ" style="margin-left:2rem;margin-top:1rem; color:black">Coordinate 2</label>
+                <input type="number" id="val2FJ" placeholder="Enter coordinate 2" style="margin-right:2rem;margin-left:2rem;">
+                <br><br><br>
+                <button type="button" id="button2" class="btn btn-warning" onclick="showFJ()" 
+                style="width:90%;margin-left:2rem;">Calculate Jitter</button>
+                <h5 id="demoFJ" style="margin-left:3rem;margin-top:1rem;">Jitter: </h5>
+            </form>    
+        </div>
+        <div class="col-md-3" style="margin-left:5rem;">
+            <h5 style="margin-left:2rem;">Eye Opening</h5>
+            <form>
+                <label for="val1FEO" style="margin-left:2rem; color:black;">Coordinate 1</label>
+                <input type="number" id="val1FEO" placeholder="Enter coordinate 1" style="margin-right:2rem;margin-left:2rem;">
+                <label for="val2FEO" style="margin-left:2rem;margin-top:1rem; color:black">Coordinate 2</label>
+                <input type="number" id="val2FEO" placeholder="Enter coordinate 2" style="margin-right:2rem;margin-left:2rem;">
+                <br><br><br>
+                <button type="button" id="button2" class="btn btn-danger"   onclick="showFEO()" 
+                style="width:90%;margin-left:2rem;">Calculate Eye Opening</button>
+                <h5 id="demoFEO" style="margin-left:1rem;margin-top:1rem;">Eye Opening:</h5>
+            </form>
+        </div>
+        <div class="col-md-3" style="margin-left:5rem">
+            <h5 style="margin-left:2rem;">Eye Width</h5>
+            <form>
+                <label for="val1FEW" style="margin-left:2rem; color:black;">Coordinate 1</label>
+                <input type="number" id="val1FEW" placeholder="Enter coordinate 1" style="margin-right:2rem;margin-left:2rem;">
+                <label for="val2FEW" style="margin-left:2rem;margin-top:1rem; color:black">Coordinate 2</label>
+                <input type="number" id="val2FEW" placeholder="Enter coordinate 2" style="margin-right:2rem;margin-left:2rem;">
+                <br><br><br>
+                <button type="button" id="button2" class="btn btn-primary"  onclick="showFEW()" 
+                style="width:90%;margin-left:2rem;">Calculate Eye Width</button>
+                <h5 id="demoFEW" style="margin-left:3rem;margin-top:1rem;">Eye width: </h5>
+                <br>
+                <button onclick="myFunction4()" class="btn btn-success w-100 mt-2" type="button"
+                data-slide-to="3" data-target="#carouselExampleIndicators" style="margin-left:2rem;margin-bottom:1rem;">Next</button>
+                </br>
+            </form>
+        </div>   
+      </div>            
+  </div>
+    <!--SUBJECT-3 Slide Ends-->
+        
+    <!--SUBJECT-4 Slide Begin-->
+    <div class="carousel-item ">
+        <div class="div1 subject4padding" style='color: black;'>
+                                <div class="demoFont">Varying all parameters</div>
+                            </div>
+                       
+           <div class="row mb-3">
+                    <div class="col-md-4 ml-3">
+                        <canvas id="canvasP" width="390" style="border:1px solid #000000;background-color:#000000;margin-left:0;padding-right:40px;" height="500" onclick="showCoords(event)" >
+                    </canvas>
+                    </div>
+               <div class="col-md-4 w-100" style="margin-left:13rem;margin-top:2rem;">
+                        <div class="row">
+                            <input type="range" id="myRangePD" class="slider" value="20" min="20" max="80" onchange="sliderShowPD()">
+                            <span class="mt-2" style="color:black;">Selected Value: <label id="LabelPD" style="right:0;"></label></span>
+                        </div>
+                        <div class="row mt-3">           
+                          <button type="button" class="btn btn-primary" id="buttonPD"   onclick="sliderValuePD()" style="width:100%">Add Delay</button>
+                        </div>
+                        <br><br>
+                        <div class="row">
+                            <input type="range" id="myRangePA" class="slider" min="-80" max="80" onchange="sliderShowPA()">
+                            <span class="mt-2" style="color:black;">Selected Value: <label id="LabelPA" style="right:0;color:black;"></label></span>
+                        </div>
+                        <div class="row mt-3">           
+                          <button type="button" class="btn btn-primary" id="buttonPA" disabled onclick="sliderValuePA()" style="width:100%">Select range of Amplitude</button>
+                        </div>
+                        <br><br>
+                        <div class="row">
+                          <input type="range" id="myRangePF" class="slider" value="20" min="20" max="40" onchange="sliderShowPF()">
+                          <span class="mt-2" style="color:black;">Selected Value: <label id="LabelPF" style="right:0;color:0;"></label></span>
+                        </div>
+                        <div class="row mt-3">           
+                          <button type="button" class="btn btn-primary" id="buttonPF" disabled onclick="sliderValuePF()" style="width:100%">Select range of Frequency</button>
+                        </div>
+                        <br><br>
+                        <div class="row">
+                          <button type="button" class="btn btn-danger" id="buttonTryP" disabled onclick="tryagainP()" style="width:100%">Try again</button>
+                        </div>
+               </div>
+           </div>           
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <h4 id="demoP" style="margin-top:1rem; margin-left:15rem"></h4><br>
+      </div>  
+        <div class="col-md-3">
+            <h5 style="margin-left:2rem;">Jitter</h5>
+            <form>
+                <label for="val1PJ" style="margin-left:2rem; color:black;">Coordinate 1</label>
+                <input type="number" id="val1PJ" placeholder="Enter coordinate 1" style="margin-right:2rem;margin-left:2rem;">
+                <label for="val2PJ" style="margin-left:2rem;margin-top:1rem; color:black">Coordinate 2</label>
+                <input type="number" id="val2PJ" placeholder="Enter coordinate 2" style="margin-right:2rem;margin-left:2rem;">
+                <br><br>
+                <button type="button" id="button2" class="btn btn-warning" onclick="showPJ()" 
+                style="width:90%;margin-left:2rem;">Calculate Jitter</button>
+                <h5 id="demoPJ" style="margin-left:3rem;margin-top:1rem;">Jitter: </h5>
+            </form>    
+          </div>
+        <div class="col-md-3" style="margin-left:5rem;">
+            <h5 style="margin-left:2rem;">Eye Opening</h5>
+            <form>
+                <label for="val1PEO" style="margin-left:2rem; color:black;">Coordinate 1</label>
+                <input type="number" id="val1PEO" placeholder="Enter coordinate 1" style="margin-right:2rem;margin-left:2rem;">
+                <label for="val2PEO" style="margin-left:2rem;margin-top:1rem; color:black">Coordinate 2</label>
+                <input type="number" id="val2PEO" placeholder="Enter coordinate 2" style="margin-right:2rem;margin-left:2rem;">
+                <br><br>
+                <button type="button" id="button2" class="btn btn-danger"   onclick="showPEO()" 
+                style="width:90%;margin-left:2rem;">Calculate Eye Opening</button>
+                <h5 id="demoPEO" style="margin-left:1rem;margin-top:1rem;">Eye Opening:</h5>
+            </form>
+        </div>
+        <div class="col-md-3" style="margin-left:5rem">
+            <h5 style="margin-left:2rem;">Eye Width</h5>
+            <form>
+                <label for="val1PEW" style="margin-left:2rem; color:black;">Coordinate 1</label>
+                <input type="number" id="val1PEW" placeholder="Enter coordinate 1" style="margin-right:2rem;margin-left:2rem;">
+                <label for="val2PEW" style="margin-left:2rem;margin-top:1rem; color:black">Coordinate 2</label>
+                <input type="number" id="val2PEW" placeholder="Enter coordinate 2" style="margin-right:2rem;margin-left:2rem;">
+                <br><br>
+                <button type="button" id="button2" class="btn btn-primary"  onclick="showPEW()" 
+                style="width:90%;margin-left:2rem;">Calculate Eye Width</button>
+                <br>
+                <h5 id="demoPEW" style="margin-left:3rem;margin-top:1rem;">Eye width: </h5>
+                 <a href="../quiz/postTest.html">
+                 <button class="btn btn-success w-100 mt-2" type="button" style="margin-left:2rem;margin-bottom:1rem;">Attempt Post Test</button>
+                 </a>
+            </form>
+        </div>  
+    </div>          
+</div>
+        
+                       
+                        <!--SUBJECT-4 Slide Ends-->
+                       
+
+    <br>
+    <br>
+    <!----JS template----->
+    <script type="text/javascript" src="simulation.js"></script>
+    <script src="../https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.5.0/math.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript" src="../https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="../https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
